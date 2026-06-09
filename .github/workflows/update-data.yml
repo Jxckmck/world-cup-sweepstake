@@ -23,7 +23,7 @@ jobs:
       - name: Fetch latest football data
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-        run: node scripts/update-data.js
+        run: node update-data.js
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
