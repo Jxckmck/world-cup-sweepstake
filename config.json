@@ -1,94 +1,61 @@
 {
-  "title": "World Cup Sweepstake 2026",
-  "competitionCode": "WC",
-  "players": [
-    {
-      "name": "Gail",
-      "teams": [
-        "Netherlands",
-        "Iran"
-      ]
-    },
-    {
-      "name": "Pas",
-      "teams": [
-        "Brazil",
-        "Austria"
-      ]
-    },
-    {
-      "name": "Jack",
-      "teams": [
-        "Germany",
-        "Mexico"
-      ]
-    },
-    {
-      "name": "Billy",
-      "teams": [
-        "Portugal",
-        "Switzerland"
-      ]
-    },
-    {
-      "name": "Josh",
-      "teams": [
-        "Belgium",
-        "Norway"
-      ]
-    },
-    {
-      "name": "Kathryn",
-      "teams": [
-        "England",
-        "Japan"
-      ]
-    },
-    {
-      "name": "Joanne",
-      "teams": [
-        "Croatia",
-        "Paraguay"
-      ]
-    },
-    {
-      "name": "Neil",
-      "teams": [
-        "Morocco",
-        "United States"
-      ]
-    },
-    {
-      "name": "Hayley",
-      "teams": [
-        "Colombia",
-        "Türkiye"
-      ]
-    },
-    {
-      "name": "Becca",
-      "teams": [
-        "Senegal",
-        "Uruguay"
-        
+“title”: “World Cup Sweepstake 2026”,
+“competitionCode”: “WC”,
+“players”: [
+{
+“name”: “Gail”,
+“teams”: [“Netherlands”, “Iran”]
 },
 {
-  "name": "Hathim",
-  "teams": ["Sweden", "Scotland"]
+“name”: “Pas”,
+“teams”: [“Brazil”, “Austria”]
+},
+{
+“name”: “Jack”,
+“teams”: [“Germany”, “Mexico”]
+},
+{
+“name”: “Billy”,
+“teams”: [“Portugal”, “Switzerland”]
+},
+{
+“name”: “Josh”,
+“teams”: [“Belgium”, “Norway”]
+},
+{
+“name”: “Kathryn”,
+“teams”: [“England”, “Japan”]
+},
+{
+“name”: “Joanne”,
+“teams”: [“Croatia”, “Paraguay”]
+},
+{
+“name”: “Neil”,
+“teams”: [“Morocco”, “United States”]
+},
+{
+“name”: “Hayley”,
+“teams”: [“Colombia”, “Türkiye”]
+},
+{
+“name”: “Becca”,
+“teams”: [“Senegal”, “Uruguay”]
+},
+{
+“name”: “Hathim”,
+“teams”: [“Sweden”, “Scotland”]
 }
-  
-      ]
-    }
-  ],
-  "scoring": {
-    "win": 3,
-    "draw": 1,
-    "loss": 0,
-    "roundOf32": 5,
-    "roundOf16": 10,
-    "quarterFinal": 15,
-    "semiFinal": 20,
-    "runnerUp": 30,
-    "winner": 50
-  }
+],
+“scoring”: {
+“win”: 3,
+“draw”: 1,
+“loss”: 0,
+“roundOf32”: 5,
+“roundOf16”: 10,
+“quarterFinal”: 15,
+“semiFinal”: 20,
+“runnerUp”: 30,
+“winner”: 50
+}
 }
