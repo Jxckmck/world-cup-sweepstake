@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Cup Sweepstake 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Staff Sweepstake</p>
+      <h1>World Cup Sweepstake 2026</h1>
+      <p class="subtitle">Scan. Check the standings. Argue about luck.</p>
+      <div class="status-row">
+        <span id="statusPill" class="pill">Loading</span>
+        <span id="lastUpdated">Checking latest data…</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="podium" class="podium"></section>
+
+    <section class="panel">
+      <div class="panel-title">
+        <h2>Leaderboard</h2>
+        <button onclick="location.reload()">Refresh</button>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th>Teams</th>
+              <th>Points</th>
+              <th>Record</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <section class="panel">
+        <h2>Team Points</h2>
+        <div id="teamGrid" class="team-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Latest Sweepstake Matches</h2>
+        <div id="matches" class="matches"></div>
+      </section>
+    </section>
+
+    <section class="panel rules">
+      <h2>Scoring Rules</h2>
+      <p><strong>Match points:</strong> Win 3, Draw 1, Loss 0.</p>
+      <p><strong>Bonus points:</strong> Round of 32 +5, Round of 16 +10, Quarter-final +15, Semi-final +20, Runner-up +30, Winner +50.</p>
+      <p class="muted">The page updates automatically after the scheduled updater runs.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
