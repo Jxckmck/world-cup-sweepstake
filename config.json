@@ -70,6 +70,13 @@
       "teams": [
         "Senegal",
         "Uruguay"
+        
+},
+{
+  "name": "Hathim",
+  "teams": ["Sweden", "Scotland"]
+}
+  
       ]
     }
   ],
