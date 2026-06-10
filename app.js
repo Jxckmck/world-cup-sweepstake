@@ -1,70 +1,83 @@
 const FLAGS = {
-"England":"🏴",
-"Portugal":"🇵🇹",
-"Brazil":"🇧🇷",
-"Netherlands":"🇳🇱",
-"Morocco":"🇲🇦",
-"Belgium":"🇧🇪",
-"Germany":"🇩🇪",
-"Croatia":"🇭🇷",
-"Colombia":"🇨🇴",
-"Senegal":"🇸🇳",
-"Mexico":"🇲🇽",
-"United States":"🇺🇸",
-"Uruguay":"🇺🇾",
-"Japan":"🇯🇵",
-"Switzerland":"🇨🇭",
-"Iran":"🇮🇷",
-"Türkiye":"🇹🇷",
-"Turkey":"🇹🇷",
-"Austria":"🇦🇹",
-"Norway":"🇳🇴",
-"Paraguay":"🇵🇾",
-"Sweden":"🇸🇪",
-"Scotland":"🏴"
+"England": "🏴",
+"Portugal": "🇵🇹",
+"Brazil": "🇧🇷",
+"Netherlands": "🇳🇱",
+"Morocco": "🇲🇦",
+"Belgium": "🇧🇪",
+"Germany": "🇩🇪",
+"Croatia": "🇭🇷",
+"Colombia": "🇨🇴",
+"Senegal": "🇸🇳",
+"Mexico": "🇲🇽",
+"United States": "🇺🇸",
+"Uruguay": "🇺🇾",
+"Japan": "🇯🇵",
+"Switzerland": "🇨🇭",
+"Iran": "🇮🇷",
+"Türkiye": "🇹🇷",
+"Turkey": "🇹🇷",
+"Austria": "🇦🇹",
+"Norway": "🇳🇴",
+"Paraguay": "🇵🇾",
+"Sweden": "🇸🇪",
+"Scotland": "🏴"
 };
 
 let CONFIG = null;
 let DATA = null;
 
-function norm(name){
-if(!name) return "";
+function norm(name) {
+if (!name) return "";
+
 const n = String(name).trim();
 const low = n.toLowerCase();
 
-if(["turkey","turkiye","türkiye"].includes(low)) return "Türkiye";
-if(["usa","united states of america","usmnt"].includes(low)) return "United States";
+if (["turkey", "turkiye", "türkiye"].includes(low)) return "Türkiye";
+if (["usa", "united states of america", "usmnt"].includes(low)) return "United States";
 
 return n;
 }
 
-function badge(team){
+function getEl(id) {
+return document.getElementById(id);
+}
+
+function badge(team) {
 const t = norm(team);
 return `<span class="badge">${FLAGS[t] || "⚽"} ${t}</span>`;
 }
 
-function teamScore(team, data = DATA){
+function teamScore(team, data = DATA) {
 const t = norm(team);
+
 return data?.teamStats?.[t] || {
-points:0,
-played:0,
-wins:0,
-draws:0,
-losses:0,
-bonus:0
+points: 0,
+played: 0,
+wins: 0,
+draws: 0,
+losses: 0,
+bonus: 0
 };
 }
 
-function ownerOf(team){
+function ownerOf(team) {
 const t = norm(team);
+
+if (!CONFIG || !Array.isArray(CONFIG.players)) return null;
+
 return CONFIG.players.find(player => player.teams.map(norm).includes(t)) || null;
 }
 
-function allTrackedTeams(){
+function allTrackedTeams() {
+if (!CONFIG || !Array.isArray(CONFIG.players)) return [];
+
 return CONFIG.players.flatMap(player => player.teams.map(norm));
 }
 
-function buildLeaderboard(data = DATA, extraPoints = {}){
+function buildLeaderboard(data = DATA, extraPoints = {}) {
+if (!CONFIG || !Array.isArray(CONFIG.players)) return [];
+
 return CONFIG.players.map(player => {
 const stats = player.teams.map(team => teamScore(team, data));
 const basePoints = stats.reduce((total, stat) => total + (stat.points || 0), 0);
@@ -82,38 +95,42 @@ return {
 };
 ```
 
-}).sort((a,b) => b.points - a.points || b.wins - a.wins || a.name.localeCompare(b.name));
+}).sort((a, b) => b.points - a.points || b.wins - a.wins || a.name.localeCompare(b.name));
 }
 
-function rankOf(rows, playerName){
+function rankOf(rows, playerName) {
 return rows.findIndex(row => row.name === playerName) + 1;
 }
 
-function ordinal(n){
-if(!n) return "unranked";
-if(n === 1) return "1st";
-if(n === 2) return "2nd";
-if(n === 3) return "3rd";
+function ordinal(n) {
+if (!n) return "unranked";
+if (n === 1) return "1st";
+if (n === 2) return "2nd";
+if (n === 3) return "3rd";
 return `${n}th`;
 }
 
-function formatDate(dateStr){
-if(!dateStr) return "Date TBC";
+function formatDate(dateStr) {
+if (!dateStr) return "Date TBC";
 
-return new Date(dateStr).toLocaleString([], {
-weekday:"short",
-day:"numeric",
-month:"short",
-hour:"2-digit",
-minute:"2-digit"
+const date = new Date(dateStr);
+
+if (Number.isNaN(date.getTime())) return "Date TBC";
+
+return date.toLocaleString([], {
+weekday: "short",
+day: "numeric",
+month: "short",
+hour: "2-digit",
+minute: "2-digit"
 });
 }
 
-function getUpcomingMatches(){
+function getUpcomingMatches() {
 const tracked = new Set(allTrackedTeams());
 const now = Date.now();
 
-return (DATA.matches || [])
+return (DATA?.matches || [])
 .filter(match => {
 const home = norm(match.homeTeam);
 const away = norm(match.awayTeam);
@@ -125,24 +142,29 @@ const time = match.utcDate ? new Date(match.utcDate).getTime() : Number.MAX_SAFE
     status !== "FINISHED" &&
     time >= now - 60 * 60 * 1000;
 })
-.sort((a,b) => new Date(a.utcDate || "2999-01-01") - new Date(b.utcDate || "2999-01-01"));
+.sort((a, b) => new Date(a.utcDate || "2999-01-01") - new Date(b.utcDate || "2999-01-01"));
 ```
 
 }
 
-function renderPodium(rows){
-const medals = ["🥇","🥈","🥉"];
+function renderPodium(rows) {
+const el = getEl("podium");
+if (!el) return;
 
-document.getElementById("podium").innerHTML = rows.slice(0,3).map((row,index) => `     <div class="podium-card">       <div class="medal">${medals[index]}</div>       <div class="name">${row.name}</div>       <div class="badges">${row.teams.map(badge).join("")}</div>       <div class="points">${row.points} pts</div>     </div>
+const medals = ["🥇", "🥈", "🥉"];
+
+el.innerHTML = rows.slice(0, 3).map((row, index) => `     <div class="podium-card">       <div class="medal">${medals[index]}</div>       <div class="name">${row.name}</div>       <div class="badges">${row.teams.map(badge).join("")}</div>       <div class="points">${row.points} pts</div>     </div>
   `).join("");
 }
 
-function renderNextMatch(match){
-const el = document.getElementById("nextMatch");
-const status = document.getElementById("nextMatchStatus");
+function renderNextMatch(match) {
+const el = getEl("nextMatch");
+const status = getEl("nextMatchStatus");
 
-if(!match){
-status.textContent = "None found";
+if (!el) return;
+
+if (!match) {
+if (status) status.textContent = "None found";
 el.innerHTML = `<p class="error">No upcoming sweepstake fixtures found yet.</p>`;
 return;
 }
@@ -154,42 +176,43 @@ const awayOwner = ownerOf(away);
 
 let ownerLine = "";
 
-if(homeOwner && awayOwner && homeOwner.name === awayOwner.name){
+if (homeOwner && awayOwner && homeOwner.name === awayOwner.name) {
 ownerLine = `${homeOwner.name} has both teams`;
-} else if(homeOwner && awayOwner){
+} else if (homeOwner && awayOwner) {
 ownerLine = `${homeOwner.name} vs ${awayOwner.name}`;
-} else if(homeOwner){
+} else if (homeOwner) {
 ownerLine = `${homeOwner.name}'s team plays next`;
-} else if(awayOwner){
+} else if (awayOwner) {
 ownerLine = `${awayOwner.name}'s team plays next`;
 } else {
 ownerLine = "Next tracked match";
 }
 
-status.textContent = match.status || "Upcoming";
+if (status) status.textContent = match.status || "Upcoming";
 
 el.innerHTML = `    <div class="owner-line">${ownerLine}</div>     <div class="match-line">${FLAGS[home] || "⚽"} ${home} <span class="muted">vs</span> ${FLAGS[away] || "⚽"} ${away}</div>     <div class="match-time">${formatDate(match.utcDate)}</div>     <div class="team-small">       <span>${homeOwner ?`${homeOwner.name}: ${teamScore(home).points} team pts`:`${home}: not in sweepstake`}</span>       <span>${awayOwner ? `${awayOwner.name}: ${teamScore(away).points} team pts`:`${away}: not in sweepstake`}</span>     </div>
   `;
 }
 
-function scenarioText(team, beforeRows, afterRows){
+function scenarioText(team, beforeRows, afterRows) {
 const owner = ownerOf(team);
-if(!owner) return null;
+if (!owner) return null;
 
 const before = rankOf(beforeRows, owner.name);
 const after = rankOf(afterRows, owner.name);
 
-if(after === 1 && before !== 1) return `${owner.name} would move into 1st place.`;
-if(after < before) return `${owner.name} would move from ${ordinal(before)} to ${ordinal(after)}.`;
-if(after > before) return `${owner.name} would drop from ${ordinal(before)} to ${ordinal(after)}.`;
+if (after === 1 && before !== 1) return `${owner.name} would move into 1st place.`;
+if (after < before) return `${owner.name} would move from ${ordinal(before)} to ${ordinal(after)}.`;
+if (after > before) return `${owner.name} would drop from ${ordinal(before)} to ${ordinal(after)}.`;
 
 return `${owner.name} would stay ${ordinal(before)}.`;
 }
 
-function renderImpact(match){
-const el = document.getElementById("impact");
+function renderImpact(match) {
+const el = getEl("impact");
+if (!el) return;
 
-if(!match){
+if (!match) {
 el.innerHTML = `       <div class="impact-card">         <strong>No scenario yet</strong>         <p>Once fixtures are available, this will show what the next match could change.</p>       </div>
     `;
 return;
@@ -202,24 +225,25 @@ const awayOwner = ownerOf(away);
 const beforeRows = buildLeaderboard();
 const cards = [];
 
-if(homeOwner){
+if (homeOwner) {
 const afterHomeWin = buildLeaderboard(DATA, { [home]: CONFIG.scoring.win });
 cards.push(`       <div class="impact-card">         <strong>If ${home} win</strong>         <p>${scenarioText(home, beforeRows, afterHomeWin)}</p>       </div>
     `);
 }
 
-if(homeOwner || awayOwner){
+if (homeOwner || awayOwner) {
 const drawPoints = {};
 
 ```
-if(homeOwner) drawPoints[home] = CONFIG.scoring.draw;
-if(awayOwner) drawPoints[away] = CONFIG.scoring.draw;
+if (homeOwner) drawPoints[home] = CONFIG.scoring.draw;
+if (awayOwner) drawPoints[away] = CONFIG.scoring.draw;
 
 const afterDraw = buildLeaderboard(DATA, drawPoints);
 const drawLines = [];
 
-if(homeOwner) drawLines.push(scenarioText(home, beforeRows, afterDraw));
-if(awayOwner && (!homeOwner || awayOwner.name !== homeOwner.name)) {
+if (homeOwner) drawLines.push(scenarioText(home, beforeRows, afterDraw));
+
+if (awayOwner && (!homeOwner || awayOwner.name !== homeOwner.name)) {
   drawLines.push(scenarioText(away, beforeRows, afterDraw));
 }
 
@@ -233,13 +257,13 @@ cards.push(`
 
 }
 
-if(awayOwner){
+if (awayOwner) {
 const afterAwayWin = buildLeaderboard(DATA, { [away]: CONFIG.scoring.win });
 cards.push(`       <div class="impact-card">         <strong>If ${away} win</strong>         <p>${scenarioText(away, beforeRows, afterAwayWin)}</p>       </div>
     `);
 }
 
-if(!cards.length){
+if (!cards.length) {
 cards.push(`       <div class="impact-card">         <strong>No leaderboard impact</strong>         <p>This match does not include one of your sweepstake teams.</p>       </div>
     `);
 }
@@ -247,20 +271,24 @@ cards.push(`       <div class="impact-card">         <strong>No leaderboard impa
 el.innerHTML = cards.join("");
 }
 
-function renderLeaderboard(rows){
-document.getElementById("leaderboard").innerHTML = rows.map((row,index) => `     <tr>       <td class="rank">${index + 1}</td>       <td><strong>${row.name}</strong></td>       <td><div class="badges">${row.teams.map(badge).join("")}</div></td>       <td class="points">${row.points}</td>       <td>${row.wins}W ${row.draws}D ${row.losses}L</td>     </tr>
+function renderLeaderboard(rows) {
+const el = getEl("leaderboard") || getEl("leaderboardBody");
+if (!el) return;
+
+el.innerHTML = rows.map((row, index) => `     <tr>       <td class="rank">${index + 1}</td>       <td><strong>${row.name}</strong></td>       <td><div class="badges">${row.teams.map(badge).join("")}</div></td>       <td class="points">${row.points}</td>       <td>${row.wins}W ${row.draws}D ${row.losses}L</td>     </tr>
   `).join("");
 }
 
-function renderUpcomingMatches(matches){
-const el = document.getElementById("matches");
+function renderUpcomingMatches(matches) {
+const el = getEl("matches");
+if (!el) return;
 
-if(!matches.length){
+if (!matches.length) {
 el.innerHTML = `<p class="error">No upcoming sweepstake fixtures found yet.</p>`;
 return;
 }
 
-el.innerHTML = matches.slice(0,5).map(match => {
+el.innerHTML = matches.slice(0, 5).map(match => {
 const home = norm(match.homeTeam);
 const away = norm(match.awayTeam);
 const homeOwner = ownerOf(home);
@@ -269,13 +297,13 @@ const awayOwner = ownerOf(away);
 ```
 let ownerLabel = "Tracked match";
 
-if(homeOwner && awayOwner && homeOwner.name === awayOwner.name){
+if (homeOwner && awayOwner && homeOwner.name === awayOwner.name) {
   ownerLabel = `${homeOwner.name} has both teams`;
-} else if(homeOwner && awayOwner){
+} else if (homeOwner && awayOwner) {
   ownerLabel = `${homeOwner.name} vs ${awayOwner.name}`;
-} else if(homeOwner){
+} else if (homeOwner) {
   ownerLabel = homeOwner.name;
-} else if(awayOwner){
+} else if (awayOwner) {
   ownerLabel = awayOwner.name;
 }
 
@@ -294,27 +322,37 @@ return `
 }).join("");
 }
 
-async function main(){
-try{
+async function main() {
+try {
 [CONFIG, DATA] = await Promise.all([
-fetch("config.json", {cache:"no-store"}).then(response => response.json()),
-fetch("data.json", {cache:"no-store"}).then(response => response.json())
+fetch("config.json", { cache: "no-store" }).then(response => response.json()),
+fetch("data.json", { cache: "no-store" }).then(response => response.json())
 ]);
 
 ```
-const status = document.getElementById("statusPill");
-const lastUpdated = document.getElementById("lastUpdated");
+const status = getEl("statusPill");
+const lastUpdated = getEl("lastUpdated");
 
-if(DATA.error){
-  status.textContent = "Needs setup";
-  status.classList.add("bad");
-  lastUpdated.textContent = DATA.error;
+if (DATA.error) {
+  if (status) {
+    status.textContent = "Needs setup";
+    status.classList.add("bad");
+  }
+
+  if (lastUpdated) {
+    lastUpdated.textContent = DATA.error;
+  }
 } else {
-  status.textContent = "Live data ready";
-  status.classList.remove("bad");
-  lastUpdated.textContent = DATA.lastUpdated
-    ? `Updated ${new Date(DATA.lastUpdated).toLocaleString()}`
-    : "Waiting for update";
+  if (status) {
+    status.textContent = "Live data ready";
+    status.classList.remove("bad");
+  }
+
+  if (lastUpdated) {
+    lastUpdated.textContent = DATA.lastUpdated
+      ? `Updated ${new Date(DATA.lastUpdated).toLocaleString()}`
+      : "Waiting for update";
+  }
 }
 
 const rows = buildLeaderboard();
@@ -328,33 +366,53 @@ renderLeaderboard(rows);
 renderUpcomingMatches(upcoming);
 ```
 
-} catch(error){
+} catch (error) {
 console.error(error);
-document.getElementById("statusPill").textContent = "Site error";
-document.getElementById("statusPill").classList.add("bad");
-document.getElementById("lastUpdated").textContent = "Check config.json or data.json";
+
+```
+const status = getEl("statusPill");
+const lastUpdated = getEl("lastUpdated");
+
+if (status) {
+  status.textContent = "Site error";
+  status.classList.add("bad");
+}
+
+if (lastUpdated) {
+  lastUpdated.textContent = "Check config.json, data.json, index.html or app.js";
+}
+```
+
 }
 }
 
-document.getElementById("leaderboardToggle").addEventListener("click", () => {
-const panel = document.getElementById("leaderboardPanel");
-const button = document.getElementById("leaderboardToggle");
+const leaderboardToggle = getEl("leaderboardToggle");
+const leaderboardPanel = getEl("leaderboardPanel");
+const refreshBtn = getEl("refreshBtn");
 
-panel.classList.toggle("hidden");
+if (leaderboardToggle && leaderboardPanel) {
+leaderboardToggle.addEventListener("click", () => {
+leaderboardPanel.classList.toggle("hidden");
 
-const isOpen = !panel.classList.contains("hidden");
-button.textContent = isOpen ? "Hide Full Leaderboard" : "View Full Leaderboard";
+```
+const isOpen = !leaderboardPanel.classList.contains("hidden");
+leaderboardToggle.textContent = isOpen ? "Hide Full Leaderboard" : "View Full Leaderboard";
 
-if(isOpen) {
-panel.scrollIntoView({
-behavior:"smooth",
-block:"start"
+if (isOpen) {
+  leaderboardPanel.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+```
+
 });
 }
-});
 
-document.getElementById("refreshBtn").addEventListener("click", () => {
+if (refreshBtn) {
+refreshBtn.addEventListener("click", () => {
 location.reload();
 });
+}
 
 main();
