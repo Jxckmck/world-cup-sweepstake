@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T21:23:05.421Z",
+  "lastUpdated": "2026-06-11T12:30:46.207Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -115,7 +115,7 @@
     {
       "id": 537352,
       "utcDate": "2026-06-14T23:00:00Z",
-      "status": "SCHEDULED",
+      "status": "TIMED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
       "homeTeam": "Ivory Coast",
