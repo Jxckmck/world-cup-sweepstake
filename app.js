@@ -29,12 +29,11 @@ let DATA = null;
 
 function norm(name) {
 if (!name) return "";
-
 const n = String(name).trim();
 const low = n.toLowerCase();
 
-if (["turkey", "turkiye", "türkiye"].includes(low)) return "Türkiye";
-if (["usa", "united states of america", "usmnt"].includes(low)) return "United States";
+if (low === "turkey" || low === "turkiye" || low === "türkiye") return "Türkiye";
+if (low === "usa" || low === "united states of america" || low === "usmnt") return "United States";
 
 return n;
 }
@@ -45,13 +44,14 @@ return document.getElementById(id);
 
 function badge(team) {
 const t = norm(team);
-return `<span class="badge">${FLAGS[t] || "⚽"} ${t}</span>`;
+return "<span class="badge">" + (FLAGS[t] || "⚽") + " " + t + "</span>";
 }
 
-function teamScore(team, data = DATA) {
+function teamScore(team) {
 const t = norm(team);
 
-return data?.teamStats?.[t] || {
+if (!DATA || !DATA.teamStats || !DATA.teamStats[t]) {
+return {
 points: 0,
 played: 0,
 wins: 0,
@@ -61,45 +61,74 @@ bonus: 0
 };
 }
 
+return DATA.teamStats[t];
+}
+
 function ownerOf(team) {
 const t = norm(team);
 
 if (!CONFIG || !Array.isArray(CONFIG.players)) return null;
 
-return CONFIG.players.find(player => player.teams.map(norm).includes(t)) || null;
+return CONFIG.players.find(function(player) {
+return player.teams.map(norm).includes(t);
+}) || null;
 }
 
 function allTrackedTeams() {
 if (!CONFIG || !Array.isArray(CONFIG.players)) return [];
 
-return CONFIG.players.flatMap(player => player.teams.map(norm));
+return CONFIG.players.flatMap(function(player) {
+return player.teams.map(norm);
+});
 }
 
-function buildLeaderboard(data = DATA, extraPoints = {}) {
+function buildLeaderboard(extraPoints) {
+extraPoints = extraPoints || {};
+
 if (!CONFIG || !Array.isArray(CONFIG.players)) return [];
 
-return CONFIG.players.map(player => {
-const stats = player.teams.map(team => teamScore(team, data));
-const basePoints = stats.reduce((total, stat) => total + (stat.points || 0), 0);
-const bonus = player.teams.reduce((total, team) => total + (extraPoints[norm(team)] || 0), 0);
+return CONFIG.players.map(function(player) {
+const stats = player.teams.map(function(team) {
+return teamScore(team);
+});
 
 ```
+const basePoints = stats.reduce(function(total, stat) {
+  return total + (stat.points || 0);
+}, 0);
+
+const bonus = player.teams.reduce(function(total, team) {
+  return total + (extraPoints[norm(team)] || 0);
+}, 0);
+
 return {
   name: player.name,
   teams: player.teams,
   points: basePoints + bonus,
-  played: stats.reduce((total, stat) => total + (stat.played || 0), 0),
-  wins: stats.reduce((total, stat) => total + (stat.wins || 0), 0),
-  draws: stats.reduce((total, stat) => total + (stat.draws || 0), 0),
-  losses: stats.reduce((total, stat) => total + (stat.losses || 0), 0)
+  played: stats.reduce(function(total, stat) {
+    return total + (stat.played || 0);
+  }, 0),
+  wins: stats.reduce(function(total, stat) {
+    return total + (stat.wins || 0);
+  }, 0),
+  draws: stats.reduce(function(total, stat) {
+    return total + (stat.draws || 0);
+  }, 0),
+  losses: stats.reduce(function(total, stat) {
+    return total + (stat.losses || 0);
+  }, 0)
 };
 ```
 
-}).sort((a, b) => b.points - a.points || b.wins - a.wins || a.name.localeCompare(b.name));
+}).sort(function(a, b) {
+return b.points - a.points || b.wins - a.wins || a.name.localeCompare(b.name);
+});
 }
 
 function rankOf(rows, playerName) {
-return rows.findIndex(row => row.name === playerName) + 1;
+return rows.findIndex(function(row) {
+return row.name === playerName;
+}) + 1;
 }
 
 function ordinal(n) {
@@ -107,7 +136,7 @@ if (!n) return "unranked";
 if (n === 1) return "1st";
 if (n === 2) return "2nd";
 if (n === 3) return "3rd";
-return `${n}th`;
+return n + "th";
 }
 
 function formatDate(dateStr) {
@@ -130,8 +159,8 @@ function getUpcomingMatches() {
 const tracked = new Set(allTrackedTeams());
 const now = Date.now();
 
-return (DATA?.matches || [])
-.filter(match => {
+return (DATA.matches || [])
+.filter(function(match) {
 const home = norm(match.homeTeam);
 const away = norm(match.awayTeam);
 const status = String(match.status || "").toUpperCase();
@@ -142,7 +171,9 @@ const time = match.utcDate ? new Date(match.utcDate).getTime() : Number.MAX_SAFE
     status !== "FINISHED" &&
     time >= now - 60 * 60 * 1000;
 })
-.sort((a, b) => new Date(a.utcDate || "2999-01-01") - new Date(b.utcDate || "2999-01-01"));
+.sort(function(a, b) {
+  return new Date(a.utcDate || "2999-01-01") - new Date(b.utcDate || "2999-01-01");
+});
 ```
 
 }
@@ -153,8 +184,14 @@ if (!el) return;
 
 const medals = ["🥇", "🥈", "🥉"];
 
-el.innerHTML = rows.slice(0, 3).map((row, index) => `     <div class="podium-card">       <div class="medal">${medals[index]}</div>       <div class="name">${row.name}</div>       <div class="badges">${row.teams.map(badge).join("")}</div>       <div class="points">${row.points} pts</div>     </div>
-  `).join("");
+el.innerHTML = rows.slice(0, 3).map(function(row, index) {
+return "<div class="podium-card">" +
+"<div class="medal">" + medals[index] + "</div>" +
+"<div class="name">" + row.name + "</div>" +
+"<div class="badges">" + row.teams.map(badge).join("") + "</div>" +
+"<div class="points">" + row.points + " pts</div>" +
+"</div>";
+}).join("");
 }
 
 function renderNextMatch(match) {
@@ -165,7 +202,7 @@ if (!el) return;
 
 if (!match) {
 if (status) status.textContent = "None found";
-el.innerHTML = `<p class="error">No upcoming sweepstake fixtures found yet.</p>`;
+el.innerHTML = "<p class="error">No upcoming sweepstake fixtures found yet.</p>";
 return;
 }
 
@@ -177,21 +214,27 @@ const awayOwner = ownerOf(away);
 let ownerLine = "";
 
 if (homeOwner && awayOwner && homeOwner.name === awayOwner.name) {
-ownerLine = `${homeOwner.name} has both teams`;
+ownerLine = homeOwner.name + " has both teams";
 } else if (homeOwner && awayOwner) {
-ownerLine = `${homeOwner.name} vs ${awayOwner.name}`;
+ownerLine = homeOwner.name + " vs " + awayOwner.name;
 } else if (homeOwner) {
-ownerLine = `${homeOwner.name}'s team plays next`;
+ownerLine = homeOwner.name + "'s team plays next";
 } else if (awayOwner) {
-ownerLine = `${awayOwner.name}'s team plays next`;
+ownerLine = awayOwner.name + "'s team plays next";
 } else {
 ownerLine = "Next tracked match";
 }
 
 if (status) status.textContent = match.status || "Upcoming";
 
-el.innerHTML = `    <div class="owner-line">${ownerLine}</div>     <div class="match-line">${FLAGS[home] || "⚽"} ${home} <span class="muted">vs</span> ${FLAGS[away] || "⚽"} ${away}</div>     <div class="match-time">${formatDate(match.utcDate)}</div>     <div class="team-small">       <span>${homeOwner ?`${homeOwner.name}: ${teamScore(home).points} team pts`:`${home}: not in sweepstake`}</span>       <span>${awayOwner ? `${awayOwner.name}: ${teamScore(away).points} team pts`:`${away}: not in sweepstake`}</span>     </div>
-  `;
+el.innerHTML =
+"<div class="owner-line">" + ownerLine + "</div>" +
+"<div class="match-line">" + (FLAGS[home] || "⚽") + " " + home + " <span class="muted">vs</span> " + (FLAGS[away] || "⚽") + " " + away + "</div>" +
+"<div class="match-time">" + formatDate(match.utcDate) + "</div>" +
+"<div class="team-small">" +
+"<span>" + (homeOwner ? homeOwner.name + ": " + teamScore(home).points + " team pts" : home + ": not in sweepstake") + "</span>" +
+"<span>" + (awayOwner ? awayOwner.name + ": " + teamScore(away).points + " team pts" : away + ": not in sweepstake") + "</span>" +
+"</div>";
 }
 
 function scenarioText(team, beforeRows, afterRows) {
@@ -201,11 +244,11 @@ if (!owner) return null;
 const before = rankOf(beforeRows, owner.name);
 const after = rankOf(afterRows, owner.name);
 
-if (after === 1 && before !== 1) return `${owner.name} would move into 1st place.`;
-if (after < before) return `${owner.name} would move from ${ordinal(before)} to ${ordinal(after)}.`;
-if (after > before) return `${owner.name} would drop from ${ordinal(before)} to ${ordinal(after)}.`;
+if (after === 1 && before !== 1) return owner.name + " would move into 1st place.";
+if (after < before) return owner.name + " would move from " + ordinal(before) + " to " + ordinal(after) + ".";
+if (after > before) return owner.name + " would drop from " + ordinal(before) + " to " + ordinal(after) + ".";
 
-return `${owner.name} would stay ${ordinal(before)}.`;
+return owner.name + " would stay " + ordinal(before) + ".";
 }
 
 function renderImpact(match) {
@@ -213,8 +256,11 @@ const el = getEl("impact");
 if (!el) return;
 
 if (!match) {
-el.innerHTML = `       <div class="impact-card">         <strong>No scenario yet</strong>         <p>Once fixtures are available, this will show what the next match could change.</p>       </div>
-    `;
+el.innerHTML =
+"<div class="impact-card">" +
+"<strong>No scenario yet</strong>" +
+"<p>Once fixtures are available, this will show what the next match could change.</p>" +
+"</div>";
 return;
 }
 
@@ -226,9 +272,19 @@ const beforeRows = buildLeaderboard();
 const cards = [];
 
 if (homeOwner) {
-const afterHomeWin = buildLeaderboard(DATA, { [home]: CONFIG.scoring.win });
-cards.push(`       <div class="impact-card">         <strong>If ${home} win</strong>         <p>${scenarioText(home, beforeRows, afterHomeWin)}</p>       </div>
-    `);
+const extra = {};
+extra[home] = CONFIG.scoring.win;
+const afterHomeWin = buildLeaderboard(extra);
+
+```
+cards.push(
+  "<div class=\"impact-card\">" +
+  "<strong>If " + home + " win</strong>" +
+  "<p>" + scenarioText(home, beforeRows, afterHomeWin) + "</p>" +
+  "</div>"
+);
+```
+
 }
 
 if (homeOwner || awayOwner) {
@@ -238,7 +294,7 @@ const drawPoints = {};
 if (homeOwner) drawPoints[home] = CONFIG.scoring.draw;
 if (awayOwner) drawPoints[away] = CONFIG.scoring.draw;
 
-const afterDraw = buildLeaderboard(DATA, drawPoints);
+const afterDraw = buildLeaderboard(drawPoints);
 const drawLines = [];
 
 if (homeOwner) drawLines.push(scenarioText(home, beforeRows, afterDraw));
@@ -247,25 +303,39 @@ if (awayOwner && (!homeOwner || awayOwner.name !== homeOwner.name)) {
   drawLines.push(scenarioText(away, beforeRows, afterDraw));
 }
 
-cards.push(`
-  <div class="impact-card">
-    <strong>If it is a draw</strong>
-    <p>${drawLines.filter(Boolean).join(" ")}</p>
-  </div>
-`);
+cards.push(
+  "<div class=\"impact-card\">" +
+  "<strong>If it is a draw</strong>" +
+  "<p>" + drawLines.filter(Boolean).join(" ") + "</p>" +
+  "</div>"
+);
 ```
 
 }
 
 if (awayOwner) {
-const afterAwayWin = buildLeaderboard(DATA, { [away]: CONFIG.scoring.win });
-cards.push(`       <div class="impact-card">         <strong>If ${away} win</strong>         <p>${scenarioText(away, beforeRows, afterAwayWin)}</p>       </div>
-    `);
+const extra = {};
+extra[away] = CONFIG.scoring.win;
+const afterAwayWin = buildLeaderboard(extra);
+
+```
+cards.push(
+  "<div class=\"impact-card\">" +
+  "<strong>If " + away + " win</strong>" +
+  "<p>" + scenarioText(away, beforeRows, afterAwayWin) + "</p>" +
+  "</div>"
+);
+```
+
 }
 
 if (!cards.length) {
-cards.push(`       <div class="impact-card">         <strong>No leaderboard impact</strong>         <p>This match does not include one of your sweepstake teams.</p>       </div>
-    `);
+cards.push(
+"<div class="impact-card">" +
+"<strong>No leaderboard impact</strong>" +
+"<p>This match does not include one of your sweepstake teams.</p>" +
+"</div>"
+);
 }
 
 el.innerHTML = cards.join("");
@@ -275,8 +345,15 @@ function renderLeaderboard(rows) {
 const el = getEl("leaderboard") || getEl("leaderboardBody");
 if (!el) return;
 
-el.innerHTML = rows.map((row, index) => `     <tr>       <td class="rank">${index + 1}</td>       <td><strong>${row.name}</strong></td>       <td><div class="badges">${row.teams.map(badge).join("")}</div></td>       <td class="points">${row.points}</td>       <td>${row.wins}W ${row.draws}D ${row.losses}L</td>     </tr>
-  `).join("");
+el.innerHTML = rows.map(function(row, index) {
+return "<tr>" +
+"<td class="rank">" + (index + 1) + "</td>" +
+"<td><strong>" + row.name + "</strong></td>" +
+"<td><div class="badges">" + row.teams.map(badge).join("") + "</div></td>" +
+"<td class="points">" + row.points + "</td>" +
+"<td>" + row.wins + "W " + row.draws + "D " + row.losses + "L</td>" +
+"</tr>";
+}).join("");
 }
 
 function renderUpcomingMatches(matches) {
@@ -284,11 +361,11 @@ const el = getEl("matches");
 if (!el) return;
 
 if (!matches.length) {
-el.innerHTML = `<p class="error">No upcoming sweepstake fixtures found yet.</p>`;
+el.innerHTML = "<p class="error">No upcoming sweepstake fixtures found yet.</p>";
 return;
 }
 
-el.innerHTML = matches.slice(0, 5).map(match => {
+el.innerHTML = matches.slice(0, 5).map(function(match) {
 const home = norm(match.homeTeam);
 const away = norm(match.awayTeam);
 const homeOwner = ownerOf(home);
@@ -298,25 +375,23 @@ const awayOwner = ownerOf(away);
 let ownerLabel = "Tracked match";
 
 if (homeOwner && awayOwner && homeOwner.name === awayOwner.name) {
-  ownerLabel = `${homeOwner.name} has both teams`;
+  ownerLabel = homeOwner.name + " has both teams";
 } else if (homeOwner && awayOwner) {
-  ownerLabel = `${homeOwner.name} vs ${awayOwner.name}`;
+  ownerLabel = homeOwner.name + " vs " + awayOwner.name;
 } else if (homeOwner) {
   ownerLabel = homeOwner.name;
 } else if (awayOwner) {
   ownerLabel = awayOwner.name;
 }
 
-return `
-  <div class="match-card">
-    <div class="match-meta">
-      <span>${formatDate(match.utcDate)}</span>
-      <span>${match.status || "Upcoming"}</span>
-    </div>
-    <div class="match-card-title">${ownerLabel}</div>
-    <div>${badge(home)} <span class="muted">vs</span> ${badge(away)}</div>
-  </div>
-`;
+return "<div class=\"match-card\">" +
+  "<div class=\"match-meta\">" +
+  "<span>" + formatDate(match.utcDate) + "</span>" +
+  "<span>" + (match.status || "Upcoming") + "</span>" +
+  "</div>" +
+  "<div class=\"match-card-title\">" + ownerLabel + "</div>" +
+  "<div>" + badge(home) + " <span class=\"muted\">vs</span> " + badge(away) + "</div>" +
+  "</div>";
 ```
 
 }).join("");
@@ -327,10 +402,11 @@ try {
 const cacheBust = Date.now();
 
 ```
-[CONFIG, DATA] = await Promise.all([
-  fetch(`config.json?v=${cacheBust}`, { cache: "no-store" }).then(response => response.json()),
-  fetch(`data.json?v=${cacheBust}`, { cache: "no-store" }).then(response => response.json())
-]);
+const configResponse = await fetch("config.json?v=" + cacheBust, { cache: "no-store" });
+const dataResponse = await fetch("data.json?v=" + cacheBust, { cache: "no-store" });
+
+CONFIG = await configResponse.json();
+DATA = await dataResponse.json();
 
 const status = getEl("statusPill");
 const lastUpdated = getEl("lastUpdated");
@@ -352,7 +428,7 @@ if (DATA.error) {
 
   if (lastUpdated) {
     lastUpdated.textContent = DATA.lastUpdated
-      ? `Updated ${new Date(DATA.lastUpdated).toLocaleString()}`
+      ? "Updated " + new Date(DATA.lastUpdated).toLocaleString()
       : "Waiting for update";
   }
 }
@@ -393,7 +469,7 @@ const leaderboardPanel = getEl("leaderboardPanel");
 const refreshBtn = getEl("refreshBtn");
 
 if (leaderboardToggle && leaderboardPanel) {
-leaderboardToggle.addEventListener("click", () => {
+leaderboardToggle.addEventListener("click", function() {
 leaderboardPanel.classList.toggle("hidden");
 
 ```
@@ -412,7 +488,7 @@ if (isOpen) {
 }
 
 if (refreshBtn) {
-refreshBtn.addEventListener("click", () => {
+refreshBtn.addEventListener("click", function() {
 location.reload();
 });
 }
