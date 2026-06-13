@@ -443,3 +443,6 @@ if (refreshButton) {
 }
 
 main();
+setInterval(function() {
+  main();
+}, 60000);
