@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T00:05:19.091Z",
+  "lastUpdated": "2026-06-13T10:17:16.150Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -38,13 +38,13 @@
     {
       "id": 537345,
       "utcDate": "2026-06-13T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
       "homeTeam": "United States",
       "awayTeam": "Paraguay",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "id": 537334,
@@ -1254,10 +1254,10 @@
     },
     "Paraguay": {
       "points": 0,
-      "played": 0,
+      "played": 1,
       "wins": 0,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 0
     },
     "Morocco": {
@@ -1269,9 +1269,9 @@
       "bonus": 0
     },
     "United States": {
-      "points": 0,
-      "played": 0,
-      "wins": 0,
+      "points": 3,
+      "played": 1,
+      "wins": 1,
       "draws": 0,
       "losses": 0,
       "bonus": 0
