@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T15:59:45.680Z",
+  "lastUpdated": "2026-06-13T20:07:28.663Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -49,13 +49,13 @@
     {
       "id": 537334,
       "utcDate": "2026-06-13T19:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "homeTeam": "Qatar",
       "awayTeam": "Switzerland",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537339,
