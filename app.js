@@ -92,7 +92,6 @@ const stats = player.teams.map(function(team) {
 return teamScore(team);
 });
 
-```
 const basePoints = stats.reduce(function(total, stat) {
   return total + (stat.points || 0);
 }, 0);
@@ -118,7 +117,6 @@ return {
     return total + (stat.losses || 0);
   }, 0)
 };
-```
 
 }).sort(function(a, b) {
 return b.points - a.points || b.wins - a.wins || a.name.localeCompare(b.name);
@@ -166,7 +164,6 @@ const away = norm(match.awayTeam);
 const status = String(match.status || "").toUpperCase();
 const time = match.utcDate ? new Date(match.utcDate).getTime() : Number.MAX_SAFE_INTEGER;
 
-```
   return (tracked.has(home) || tracked.has(away)) &&
     status !== "FINISHED" &&
     time >= now - 60 * 60 * 1000;
@@ -174,7 +171,6 @@ const time = match.utcDate ? new Date(match.utcDate).getTime() : Number.MAX_SAFE
 .sort(function(a, b) {
   return new Date(a.utcDate || "2999-01-01") - new Date(b.utcDate || "2999-01-01");
 });
-```
 
 }
 
@@ -276,21 +272,18 @@ const extra = {};
 extra[home] = CONFIG.scoring.win;
 const afterHomeWin = buildLeaderboard(extra);
 
-```
 cards.push(
   "<div class=\"impact-card\">" +
   "<strong>If " + home + " win</strong>" +
   "<p>" + scenarioText(home, beforeRows, afterHomeWin) + "</p>" +
   "</div>"
 );
-```
 
 }
 
 if (homeOwner || awayOwner) {
 const drawPoints = {};
 
-```
 if (homeOwner) drawPoints[home] = CONFIG.scoring.draw;
 if (awayOwner) drawPoints[away] = CONFIG.scoring.draw;
 
@@ -309,7 +302,6 @@ cards.push(
   "<p>" + drawLines.filter(Boolean).join(" ") + "</p>" +
   "</div>"
 );
-```
 
 }
 
@@ -318,14 +310,12 @@ const extra = {};
 extra[away] = CONFIG.scoring.win;
 const afterAwayWin = buildLeaderboard(extra);
 
-```
 cards.push(
   "<div class=\"impact-card\">" +
   "<strong>If " + away + " win</strong>" +
   "<p>" + scenarioText(away, beforeRows, afterAwayWin) + "</p>" +
   "</div>"
 );
-```
 
 }
 
@@ -371,7 +361,6 @@ const away = norm(match.awayTeam);
 const homeOwner = ownerOf(home);
 const awayOwner = ownerOf(away);
 
-```
 let ownerLabel = "Tracked match";
 
 if (homeOwner && awayOwner && homeOwner.name === awayOwner.name) {
@@ -392,7 +381,6 @@ return "<div class=\"match-card\">" +
   "<div class=\"match-card-title\">" + ownerLabel + "</div>" +
   "<div>" + badge(home) + " <span class=\"muted\">vs</span> " + badge(away) + "</div>" +
   "</div>";
-```
 
 }).join("");
 }
@@ -401,7 +389,6 @@ async function main() {
 try {
 const cacheBust = Date.now();
 
-```
 const configResponse = await fetch("config.json?v=" + cacheBust, { cache: "no-store" });
 const dataResponse = await fetch("data.json?v=" + cacheBust, { cache: "no-store" });
 
@@ -442,12 +429,10 @@ renderNextMatch(nextMatch);
 renderImpact(nextMatch);
 renderLeaderboard(rows);
 renderUpcomingMatches(upcoming);
-```
 
 } catch (error) {
 console.error(error);
 
-```
 const status = getEl("statusPill");
 const lastUpdated = getEl("lastUpdated");
 
@@ -459,7 +444,6 @@ if (status) {
 if (lastUpdated) {
   lastUpdated.textContent = "Check config.json, data.json, index.html or app.js";
 }
-```
 
 }
 }
@@ -472,7 +456,6 @@ if (leaderboardToggle && leaderboardPanel) {
 leaderboardToggle.addEventListener("click", function() {
 leaderboardPanel.classList.toggle("hidden");
 
-```
 const isOpen = !leaderboardPanel.classList.contains("hidden");
 leaderboardToggle.textContent = isOpen ? "Hide Full Leaderboard" : "View Full Leaderboard";
 
@@ -482,7 +465,6 @@ if (isOpen) {
     block: "start"
   });
 }
-```
 
 });
 }
