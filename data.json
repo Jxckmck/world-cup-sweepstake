@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T23:53:51.524Z",
+  "lastUpdated": "2026-06-14T10:54:43.506Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -32,8 +32,8 @@
       "group": "GROUP_B",
       "homeTeam": "Canada",
       "awayTeam": "Bosnia-Herzegovina",
-      "homeScore": 1,
-      "awayScore": 1
+      "homeScore": null,
+      "awayScore": null
     },
     {
       "id": 537345,
@@ -60,7 +60,7 @@
     {
       "id": 537339,
       "utcDate": "2026-06-13T22:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "homeTeam": "Brazil",
@@ -71,24 +71,24 @@
     {
       "id": 537340,
       "utcDate": "2026-06-14T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "homeTeam": "Haiti",
       "awayTeam": "Scotland",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537346,
       "utcDate": "2026-06-14T04:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
       "homeTeam": "Australia",
       "awayTeam": "Türkiye",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": 537351,
@@ -1165,10 +1165,10 @@
       "bonus": 0
     },
     "Brazil": {
-      "points": 0,
-      "played": 0,
+      "points": 1,
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
       "bonus": 0
     },
@@ -1261,10 +1261,10 @@
       "bonus": 0
     },
     "Morocco": {
-      "points": 0,
-      "played": 0,
+      "points": 1,
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
       "bonus": 0
     },
@@ -1286,10 +1286,10 @@
     },
     "Türkiye": {
       "points": 0,
-      "played": 0,
+      "played": 1,
       "wins": 0,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 0
     },
     "Senegal": {
@@ -1317,9 +1317,9 @@
       "bonus": 0
     },
     "Scotland": {
-      "points": 0,
-      "played": 0,
-      "wins": 0,
+      "points": 3,
+      "played": 1,
+      "wins": 1,
       "draws": 0,
       "losses": 0,
       "bonus": 0
