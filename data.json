@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T10:54:43.506Z",
+  "lastUpdated": "2026-06-14T16:14:13.637Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -32,8 +32,8 @@
       "group": "GROUP_B",
       "homeTeam": "Canada",
       "awayTeam": "Bosnia-Herzegovina",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 537345,
