@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T16:25:01.707Z",
+  "lastUpdated": "2026-06-15T23:20:44.487Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -137,7 +137,7 @@
     {
       "id": 537369,
       "utcDate": "2026-06-15T16:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Spain",
@@ -148,24 +148,24 @@
     {
       "id": 537363,
       "utcDate": "2026-06-15T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "homeTeam": "Belgium",
       "awayTeam": "Egypt",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 537370,
       "utcDate": "2026-06-15T22:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Saudi Arabia",
       "awayTeam": "Uruguay",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 537364,
@@ -1213,10 +1213,10 @@
       "bonus": 0
     },
     "Belgium": {
-      "points": 0,
-      "played": 0,
+      "points": 1,
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
       "bonus": 0
     },
