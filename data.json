@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T23:20:44.487Z",
+  "lastUpdated": "2026-06-16T18:14:26.105Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -159,24 +159,24 @@
     {
       "id": 537370,
       "utcDate": "2026-06-15T22:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Saudi Arabia",
       "awayTeam": "Uruguay",
       "homeScore": 1,
-      "awayScore": 0
+      "awayScore": 1
     },
     {
       "id": 537364,
       "utcDate": "2026-06-16T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "homeTeam": "Iran",
       "awayTeam": "New Zealand",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": 537391,
@@ -1157,10 +1157,10 @@
       "bonus": 0
     },
     "Iran": {
-      "points": 0,
-      "played": 0,
+      "points": 1,
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
       "bonus": 0
     },
@@ -1301,10 +1301,10 @@
       "bonus": 0
     },
     "Uruguay": {
-      "points": 0,
-      "played": 0,
+      "points": 1,
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
       "bonus": 0
     },
