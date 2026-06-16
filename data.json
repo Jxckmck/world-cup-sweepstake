@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T18:14:26.105Z",
+  "lastUpdated": "2026-06-16T23:52:23.903Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -181,24 +181,24 @@
     {
       "id": 537391,
       "utcDate": "2026-06-16T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
       "homeTeam": "France",
       "awayTeam": "Senegal",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 537392,
       "utcDate": "2026-06-16T22:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
       "homeTeam": "Iraq",
       "awayTeam": "Norway",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 3
     },
     {
       "id": 537397,
@@ -1294,10 +1294,10 @@
     },
     "Senegal": {
       "points": 0,
-      "played": 0,
+      "played": 1,
       "wins": 0,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 0
     },
     "Uruguay": {
