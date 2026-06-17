@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T13:03:25.809Z",
+  "lastUpdated": "2026-06-17T21:20:45.934Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -225,24 +225,24 @@
     {
       "id": 537403,
       "utcDate": "2026-06-17T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "homeTeam": "Portugal",
       "awayTeam": "Congo DR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 537409,
       "utcDate": "2026-06-17T20:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
       "homeTeam": "England",
       "awayTeam": "Croatia",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "id": 537410,
@@ -1197,10 +1197,10 @@
       "bonus": 0
     },
     "Portugal": {
-      "points": 0,
-      "played": 0,
+      "points": 1,
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
       "bonus": 0
     },
