@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T23:52:23.903Z",
+  "lastUpdated": "2026-06-17T13:03:25.809Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -192,35 +192,35 @@
     {
       "id": 537392,
       "utcDate": "2026-06-16T22:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
       "homeTeam": "Iraq",
       "awayTeam": "Norway",
       "homeScore": 1,
-      "awayScore": 3
+      "awayScore": 4
     },
     {
       "id": 537397,
       "utcDate": "2026-06-17T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
       "homeTeam": "Argentina",
       "awayTeam": "Algeria",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "id": 537398,
       "utcDate": "2026-06-17T04:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
       "homeTeam": "Austria",
       "awayTeam": "Jordan",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 537403,
@@ -1173,9 +1173,9 @@
       "bonus": 0
     },
     "Austria": {
-      "points": 0,
-      "played": 0,
-      "wins": 0,
+      "points": 3,
+      "played": 1,
+      "wins": 1,
       "draws": 0,
       "losses": 0,
       "bonus": 0
@@ -1221,9 +1221,9 @@
       "bonus": 0
     },
     "Norway": {
-      "points": 0,
-      "played": 0,
-      "wins": 0,
+      "points": 3,
+      "played": 1,
+      "wins": 1,
       "draws": 0,
       "losses": 0,
       "bonus": 0
