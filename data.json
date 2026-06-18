@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T11:58:06.029Z",
+  "lastUpdated": "2026-06-18T21:15:17.868Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -269,24 +269,24 @@
     {
       "id": 537329,
       "utcDate": "2026-06-18T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "homeTeam": "Czechia",
       "awayTeam": "South Africa",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 537335,
       "utcDate": "2026-06-18T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "homeTeam": "Switzerland",
       "awayTeam": "Bosnia-Herzegovina",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "id": 537336,
@@ -1205,9 +1205,9 @@
       "bonus": 0
     },
     "Switzerland": {
-      "points": 1,
-      "played": 1,
-      "wins": 0,
+      "points": 4,
+      "played": 2,
+      "wins": 1,
       "draws": 1,
       "losses": 0,
       "bonus": 0
