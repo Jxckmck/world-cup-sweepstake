@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T21:15:17.868Z",
+  "lastUpdated": "2026-06-19T12:35:43.250Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -32,8 +32,8 @@
       "group": "GROUP_B",
       "homeTeam": "Canada",
       "awayTeam": "Bosnia-Herzegovina",
-      "homeScore": 1,
-      "awayScore": 1
+      "homeScore": null,
+      "awayScore": null
     },
     {
       "id": 537345,
@@ -291,24 +291,24 @@
     {
       "id": 537336,
       "utcDate": "2026-06-18T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "homeTeam": "Canada",
       "awayTeam": "Qatar",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 0
     },
     {
       "id": 537330,
       "utcDate": "2026-06-19T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "homeTeam": "Mexico",
       "awayTeam": "South Korea",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 537348,
@@ -1189,9 +1189,9 @@
       "bonus": 0
     },
     "Mexico": {
-      "points": 3,
-      "played": 1,
-      "wins": 1,
+      "points": 6,
+      "played": 2,
+      "wins": 2,
       "draws": 0,
       "losses": 0,
       "bonus": 0
