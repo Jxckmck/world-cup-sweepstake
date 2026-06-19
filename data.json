@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T19:15:48.549Z",
+  "lastUpdated": "2026-06-19T22:38:00.280Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -313,24 +313,24 @@
     {
       "id": 537348,
       "utcDate": "2026-06-19T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
       "homeTeam": "United States",
       "awayTeam": "Australia",
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0
     },
     {
       "id": 537342,
       "utcDate": "2026-06-19T22:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "homeTeam": "Scotland",
       "awayTeam": "Morocco",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537341,
@@ -1269,9 +1269,9 @@
       "bonus": 0
     },
     "United States": {
-      "points": 3,
-      "played": 1,
-      "wins": 1,
+      "points": 6,
+      "played": 2,
+      "wins": 2,
       "draws": 0,
       "losses": 0,
       "bonus": 0
