@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T22:38:00.280Z",
+  "lastUpdated": "2026-06-20T10:14:18.005Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -324,7 +324,7 @@
     {
       "id": 537342,
       "utcDate": "2026-06-19T22:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "homeTeam": "Scotland",
@@ -335,24 +335,24 @@
     {
       "id": 537341,
       "utcDate": "2026-06-20T00:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "homeTeam": "Brazil",
       "awayTeam": "Haiti",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "id": 537347,
       "utcDate": "2026-06-20T03:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
       "homeTeam": "Türkiye",
       "awayTeam": "Paraguay",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537359,
@@ -1165,9 +1165,9 @@
       "bonus": 0
     },
     "Brazil": {
-      "points": 1,
-      "played": 1,
-      "wins": 0,
+      "points": 4,
+      "played": 2,
+      "wins": 1,
       "draws": 1,
       "losses": 0,
       "bonus": 0
@@ -1253,17 +1253,17 @@
       "bonus": 0
     },
     "Paraguay": {
-      "points": 0,
-      "played": 1,
-      "wins": 0,
+      "points": 3,
+      "played": 2,
+      "wins": 1,
       "draws": 0,
       "losses": 1,
       "bonus": 0
     },
     "Morocco": {
-      "points": 1,
-      "played": 1,
-      "wins": 0,
+      "points": 4,
+      "played": 2,
+      "wins": 1,
       "draws": 1,
       "losses": 0,
       "bonus": 0
@@ -1286,10 +1286,10 @@
     },
     "Türkiye": {
       "points": 0,
-      "played": 1,
+      "played": 2,
       "wins": 0,
       "draws": 0,
-      "losses": 1,
+      "losses": 2,
       "bonus": 0
     },
     "Senegal": {
@@ -1318,10 +1318,10 @@
     },
     "Scotland": {
       "points": 3,
-      "played": 1,
+      "played": 2,
       "wins": 1,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 0
     }
   },
