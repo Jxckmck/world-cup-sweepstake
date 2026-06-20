@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T15:57:55.810Z",
+  "lastUpdated": "2026-06-20T20:52:03.453Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -357,24 +357,24 @@
     {
       "id": 537359,
       "utcDate": "2026-06-20T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
       "homeTeam": "Netherlands",
       "awayTeam": "Sweden",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 1
     },
     {
       "id": 537353,
       "utcDate": "2026-06-20T20:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
       "homeTeam": "Germany",
       "awayTeam": "Ivory Coast",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537354,
@@ -1149,9 +1149,9 @@
   ],
   "teamStats": {
     "Netherlands": {
-      "points": 1,
-      "played": 1,
-      "wins": 0,
+      "points": 4,
+      "played": 2,
+      "wins": 1,
       "draws": 1,
       "losses": 0,
       "bonus": 0
@@ -1310,10 +1310,10 @@
     },
     "Sweden": {
       "points": 3,
-      "played": 1,
+      "played": 2,
       "wins": 1,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 0
     },
     "Scotland": {
