@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T10:46:53.583Z",
+  "lastUpdated": "2026-06-21T16:56:29.714Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -401,13 +401,13 @@
     {
       "id": 537371,
       "utcDate": "2026-06-21T16:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Spain",
       "awayTeam": "Saudi Arabia",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "id": 537365,
