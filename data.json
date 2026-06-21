@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T16:56:29.714Z",
+  "lastUpdated": "2026-06-21T22:00:42.228Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -401,24 +401,24 @@
     {
       "id": 537371,
       "utcDate": "2026-06-21T16:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Spain",
       "awayTeam": "Saudi Arabia",
-      "homeScore": 3,
+      "homeScore": 4,
       "awayScore": 0
     },
     {
       "id": 537365,
       "utcDate": "2026-06-21T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "homeTeam": "Belgium",
       "awayTeam": "Iran",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537372,
@@ -1157,10 +1157,10 @@
       "bonus": 0
     },
     "Iran": {
-      "points": 1,
-      "played": 1,
+      "points": 2,
+      "played": 2,
       "wins": 0,
-      "draws": 1,
+      "draws": 2,
       "losses": 0,
       "bonus": 0
     },
@@ -1213,10 +1213,10 @@
       "bonus": 0
     },
     "Belgium": {
-      "points": 1,
-      "played": 1,
+      "points": 2,
+      "played": 2,
       "wins": 0,
-      "draws": 1,
+      "draws": 2,
       "losses": 0,
       "bonus": 0
     },
