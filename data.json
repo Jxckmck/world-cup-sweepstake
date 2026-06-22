@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T16:15:47.070Z",
+  "lastUpdated": "2026-06-22T22:27:56.330Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -32,8 +32,8 @@
       "group": "GROUP_B",
       "homeTeam": "Canada",
       "awayTeam": "Bosnia-Herzegovina",
-      "homeScore": 1,
-      "awayScore": 1
+      "homeScore": null,
+      "awayScore": null
     },
     {
       "id": 537345,
@@ -445,24 +445,24 @@
     {
       "id": 537399,
       "utcDate": "2026-06-22T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
       "homeTeam": "Argentina",
       "awayTeam": "Austria",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": 537393,
       "utcDate": "2026-06-22T21:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
       "homeTeam": "France",
       "awayTeam": "Iraq",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 537394,
@@ -1174,10 +1174,10 @@
     },
     "Austria": {
       "points": 3,
-      "played": 1,
+      "played": 2,
       "wins": 1,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 0
     },
     "Germany": {
