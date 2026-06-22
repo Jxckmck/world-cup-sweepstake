@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T22:00:42.228Z",
+  "lastUpdated": "2026-06-22T16:15:47.070Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -423,24 +423,24 @@
     {
       "id": 537372,
       "utcDate": "2026-06-21T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Uruguay",
       "awayTeam": "Cape Verde Islands",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 2
     },
     {
       "id": 537366,
       "utcDate": "2026-06-22T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "homeTeam": "New Zealand",
       "awayTeam": "Egypt",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 3
     },
     {
       "id": 537399,
@@ -1301,10 +1301,10 @@
       "bonus": 0
     },
     "Uruguay": {
-      "points": 1,
-      "played": 1,
+      "points": 2,
+      "played": 2,
       "wins": 0,
-      "draws": 1,
+      "draws": 2,
       "losses": 0,
       "bonus": 0
     },
