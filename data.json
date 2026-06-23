@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T17:30:41.366Z",
+  "lastUpdated": "2026-06-23T22:05:50.734Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -489,24 +489,24 @@
     {
       "id": 537405,
       "utcDate": "2026-06-23T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "homeTeam": "Portugal",
       "awayTeam": "Uzbekistan",
-      "homeScore": 2,
+      "homeScore": 5,
       "awayScore": 0
     },
     {
       "id": 537411,
       "utcDate": "2026-06-23T20:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
       "homeTeam": "England",
       "awayTeam": "Ghana",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537412,
@@ -822,7 +822,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "Germany",
+      "homeTeam": "",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -866,7 +866,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "Mexico",
+      "homeTeam": "",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -899,7 +899,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "United States",
+      "homeTeam": "",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -1181,25 +1181,25 @@
       "bonus": 0
     },
     "Germany": {
-      "points": 11,
+      "points": 6,
       "played": 2,
       "wins": 2,
       "draws": 0,
       "losses": 0,
-      "bonus": 5
+      "bonus": 0
     },
     "Mexico": {
-      "points": 11,
+      "points": 6,
       "played": 2,
       "wins": 2,
       "draws": 0,
       "losses": 0,
-      "bonus": 5
+      "bonus": 0
     },
     "Portugal": {
-      "points": 1,
-      "played": 1,
-      "wins": 0,
+      "points": 4,
+      "played": 2,
+      "wins": 1,
       "draws": 1,
       "losses": 0,
       "bonus": 0
@@ -1229,10 +1229,10 @@
       "bonus": 0
     },
     "England": {
-      "points": 3,
-      "played": 1,
+      "points": 4,
+      "played": 2,
       "wins": 1,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
       "bonus": 0
     },
@@ -1269,12 +1269,12 @@
       "bonus": 0
     },
     "United States": {
-      "points": 11,
+      "points": 6,
       "played": 2,
       "wins": 2,
       "draws": 0,
       "losses": 0,
-      "bonus": 5
+      "bonus": 0
     },
     "Colombia": {
       "points": 3,
