@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T10:29:01.602Z",
+  "lastUpdated": "2026-06-24T17:31:32.750Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -822,7 +822,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "Germany",
+      "homeTeam": "",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -866,7 +866,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "Mexico",
+      "homeTeam": "",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -899,7 +899,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "United States",
+      "homeTeam": "",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -954,7 +954,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "Argentina",
+      "homeTeam": "",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -1181,20 +1181,20 @@
       "bonus": 0
     },
     "Germany": {
-      "points": 11,
+      "points": 6,
       "played": 2,
       "wins": 2,
       "draws": 0,
       "losses": 0,
-      "bonus": 5
+      "bonus": 0
     },
     "Mexico": {
-      "points": 11,
+      "points": 6,
       "played": 2,
       "wins": 2,
       "draws": 0,
       "losses": 0,
-      "bonus": 5
+      "bonus": 0
     },
     "Portugal": {
       "points": 4,
@@ -1269,12 +1269,12 @@
       "bonus": 0
     },
     "United States": {
-      "points": 11,
+      "points": 6,
       "played": 2,
       "wins": 2,
       "draws": 0,
       "losses": 0,
-      "bonus": 5
+      "bonus": 0
     },
     "Colombia": {
       "points": 6,
