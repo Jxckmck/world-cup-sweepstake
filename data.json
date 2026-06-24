@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T17:31:32.750Z",
+  "lastUpdated": "2026-06-24T22:02:53.929Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -533,24 +533,24 @@
     {
       "id": 537337,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "homeTeam": "Switzerland",
       "awayTeam": "Canada",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 537338,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "homeTeam": "Bosnia-Herzegovina",
       "awayTeam": "Qatar",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": 537344,
@@ -1205,9 +1205,9 @@
       "bonus": 0
     },
     "Switzerland": {
-      "points": 4,
-      "played": 2,
-      "wins": 1,
+      "points": 7,
+      "played": 3,
+      "wins": 2,
       "draws": 1,
       "losses": 0,
       "bonus": 0
