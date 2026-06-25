@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T22:02:53.929Z",
+  "lastUpdated": "2026-06-25T10:20:52.262Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -555,46 +555,46 @@
     {
       "id": 537344,
       "utcDate": "2026-06-24T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "homeTeam": "Morocco",
       "awayTeam": "Haiti",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 2
     },
     {
       "id": 537343,
       "utcDate": "2026-06-24T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "homeTeam": "Scotland",
       "awayTeam": "Brazil",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 3
     },
     {
       "id": 537331,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "homeTeam": "Czechia",
       "awayTeam": "Mexico",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 3
     },
     {
       "id": 537332,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "homeTeam": "South Africa",
       "awayTeam": "South Korea",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "id": 537355,
@@ -1165,9 +1165,9 @@
       "bonus": 0
     },
     "Brazil": {
-      "points": 4,
-      "played": 2,
-      "wins": 1,
+      "points": 7,
+      "played": 3,
+      "wins": 2,
       "draws": 1,
       "losses": 0,
       "bonus": 0
@@ -1189,9 +1189,9 @@
       "bonus": 0
     },
     "Mexico": {
-      "points": 6,
-      "played": 2,
-      "wins": 2,
+      "points": 9,
+      "played": 3,
+      "wins": 3,
       "draws": 0,
       "losses": 0,
       "bonus": 0
@@ -1261,9 +1261,9 @@
       "bonus": 0
     },
     "Morocco": {
-      "points": 4,
-      "played": 2,
-      "wins": 1,
+      "points": 7,
+      "played": 3,
+      "wins": 2,
       "draws": 1,
       "losses": 0,
       "bonus": 0
@@ -1318,10 +1318,10 @@
     },
     "Scotland": {
       "points": 3,
-      "played": 2,
+      "played": 3,
       "wins": 1,
       "draws": 0,
-      "losses": 1,
+      "losses": 2,
       "bonus": 0
     }
   },
