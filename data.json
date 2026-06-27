@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T12:17:36.312Z",
+  "lastUpdated": "2026-06-27T16:40:29.484Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -800,8 +800,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "South Africa",
+      "awayTeam": "Canada",
       "homeScore": null,
       "awayScore": null
     },
@@ -811,8 +811,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Brazil",
+      "awayTeam": "Japan",
       "homeScore": null,
       "awayScore": null
     },
@@ -822,7 +822,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Germany",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -833,8 +833,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Morocco",
       "homeScore": null,
       "awayScore": null
     },
@@ -844,7 +844,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Ivory Coast",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -866,7 +866,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Mexico",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -899,8 +899,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "United States",
+      "awayTeam": "Bosnia-Herzegovina",
       "homeScore": null,
       "awayScore": null
     },
@@ -932,7 +932,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Switzerland",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -943,7 +943,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Australia",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -954,7 +954,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Argentina",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -1149,12 +1149,12 @@
   ],
   "teamStats": {
     "Netherlands": {
-      "points": 7,
+      "points": 12,
       "played": 3,
       "wins": 2,
       "draws": 1,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Iran": {
       "points": 3,
@@ -1165,12 +1165,12 @@
       "bonus": 0
     },
     "Brazil": {
-      "points": 7,
+      "points": 12,
       "played": 3,
       "wins": 2,
       "draws": 1,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Austria": {
       "points": 3,
@@ -1181,20 +1181,20 @@
       "bonus": 0
     },
     "Germany": {
-      "points": 6,
+      "points": 11,
       "played": 3,
       "wins": 2,
       "draws": 0,
       "losses": 1,
-      "bonus": 0
+      "bonus": 5
     },
     "Mexico": {
-      "points": 9,
+      "points": 14,
       "played": 3,
       "wins": 3,
       "draws": 0,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Portugal": {
       "points": 4,
@@ -1205,12 +1205,12 @@
       "bonus": 0
     },
     "Switzerland": {
-      "points": 7,
+      "points": 12,
       "played": 3,
       "wins": 2,
       "draws": 1,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Belgium": {
       "points": 5,
@@ -1237,12 +1237,12 @@
       "bonus": 0
     },
     "Japan": {
-      "points": 5,
+      "points": 10,
       "played": 3,
       "wins": 1,
       "draws": 2,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Croatia": {
       "points": 3,
@@ -1261,20 +1261,20 @@
       "bonus": 0
     },
     "Morocco": {
-      "points": 7,
+      "points": 12,
       "played": 3,
       "wins": 2,
       "draws": 1,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "United States": {
-      "points": 6,
+      "points": 11,
       "played": 3,
       "wins": 2,
       "draws": 0,
       "losses": 1,
-      "bonus": 0
+      "bonus": 5
     },
     "Colombia": {
       "points": 6,
