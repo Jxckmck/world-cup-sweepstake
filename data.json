@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T21:50:27.358Z",
+  "lastUpdated": "2026-06-27T08:10:25.075Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -687,46 +687,46 @@
     {
       "id": 537373,
       "utcDate": "2026-06-27T00:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Uruguay",
       "awayTeam": "Spain",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537374,
       "utcDate": "2026-06-27T00:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "homeTeam": "Cape Verde Islands",
       "awayTeam": "Saudi Arabia",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537367,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "homeTeam": "New Zealand",
       "awayTeam": "Belgium",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 5
     },
     {
       "id": 537368,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "homeTeam": "Egypt",
       "awayTeam": "Iran",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 537413,
@@ -844,7 +844,7 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Ivory Coast",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -1157,10 +1157,10 @@
       "bonus": 5
     },
     "Iran": {
-      "points": 2,
-      "played": 2,
+      "points": 3,
+      "played": 3,
       "wins": 0,
-      "draws": 2,
+      "draws": 3,
       "losses": 0,
       "bonus": 0
     },
@@ -1213,9 +1213,9 @@
       "bonus": 5
     },
     "Belgium": {
-      "points": 2,
-      "played": 2,
-      "wins": 0,
+      "points": 5,
+      "played": 3,
+      "wins": 1,
       "draws": 2,
       "losses": 0,
       "bonus": 0
@@ -1302,10 +1302,10 @@
     },
     "Uruguay": {
       "points": 2,
-      "played": 2,
+      "played": 3,
       "wins": 0,
       "draws": 2,
-      "losses": 0,
+      "losses": 1,
       "bonus": 0
     },
     "Sweden": {
