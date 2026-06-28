@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T15:06:50.093Z",
+  "lastUpdated": "2026-06-28T19:58:46.293Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -797,13 +797,13 @@
     {
       "id": 537417,
       "utcDate": "2026-06-28T19:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "South Africa",
       "awayTeam": "Canada",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537423,
