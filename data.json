@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T00:17:49.058Z",
+  "lastUpdated": "2026-06-28T10:16:27.954Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -753,7 +753,7 @@
     {
       "id": 537407,
       "utcDate": "2026-06-27T23:30:00Z",
-      "status": "LIVE",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "homeTeam": "Colombia",
@@ -764,35 +764,35 @@
     {
       "id": 537408,
       "utcDate": "2026-06-27T23:30:00Z",
-      "status": "LIVE",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "homeTeam": "Congo DR",
       "awayTeam": "Uzbekistan",
-      "homeScore": 1,
+      "homeScore": 3,
       "awayScore": 1
     },
     {
       "id": 537401,
       "utcDate": "2026-06-28T02:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
       "homeTeam": "Jordan",
       "awayTeam": "Argentina",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 3
     },
     {
       "id": 537402,
       "utcDate": "2026-06-28T02:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
       "homeTeam": "Algeria",
       "awayTeam": "Austria",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 3
     },
     {
       "id": 537417,
@@ -823,7 +823,7 @@
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Germany",
-      "awayTeam": "",
+      "awayTeam": "Paraguay",
       "homeScore": null,
       "awayScore": null
     },
@@ -845,7 +845,7 @@
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Ivory Coast",
-      "awayTeam": "",
+      "awayTeam": "Norway",
       "homeScore": null,
       "awayScore": null
     },
@@ -855,8 +855,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "France",
+      "awayTeam": "Sweden",
       "homeScore": null,
       "awayScore": null
     },
@@ -867,7 +867,7 @@
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Mexico",
-      "awayTeam": "",
+      "awayTeam": "Ecuador",
       "homeScore": null,
       "awayScore": null
     },
@@ -877,8 +877,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "England",
+      "awayTeam": "Congo DR",
       "homeScore": null,
       "awayScore": null
     },
@@ -888,8 +888,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Belgium",
+      "awayTeam": "Senegal",
       "homeScore": null,
       "awayScore": null
     },
@@ -910,8 +910,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Spain",
+      "awayTeam": "Austria",
       "homeScore": null,
       "awayScore": null
     },
@@ -921,8 +921,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Portugal",
+      "awayTeam": "Croatia",
       "homeScore": null,
       "awayScore": null
     },
@@ -933,7 +933,7 @@
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Switzerland",
-      "awayTeam": "",
+      "awayTeam": "Algeria",
       "homeScore": null,
       "awayScore": null
     },
@@ -944,7 +944,7 @@
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Australia",
-      "awayTeam": "",
+      "awayTeam": "Egypt",
       "homeScore": null,
       "awayScore": null
     },
@@ -955,7 +955,7 @@
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Argentina",
-      "awayTeam": "",
+      "awayTeam": "Cape Verde Islands",
       "homeScore": null,
       "awayScore": null
     },
@@ -965,8 +965,8 @@
       "status": "TIMED",
       "stage": "LAST_32",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Colombia",
+      "awayTeam": "Ghana",
       "homeScore": null,
       "awayScore": null
     },
@@ -1173,12 +1173,12 @@
       "bonus": 5
     },
     "Austria": {
-      "points": 3,
-      "played": 2,
+      "points": 9,
+      "played": 3,
       "wins": 1,
-      "draws": 0,
+      "draws": 1,
       "losses": 1,
-      "bonus": 0
+      "bonus": 5
     },
     "Germany": {
       "points": 11,
@@ -1197,12 +1197,12 @@
       "bonus": 5
     },
     "Portugal": {
-      "points": 4,
-      "played": 2,
+      "points": 10,
+      "played": 3,
       "wins": 1,
-      "draws": 1,
+      "draws": 2,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Switzerland": {
       "points": 12,
@@ -1213,28 +1213,28 @@
       "bonus": 5
     },
     "Belgium": {
-      "points": 5,
+      "points": 10,
       "played": 3,
       "wins": 1,
       "draws": 2,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Norway": {
-      "points": 6,
+      "points": 11,
       "played": 3,
       "wins": 2,
       "draws": 0,
       "losses": 1,
-      "bonus": 0
+      "bonus": 5
     },
     "England": {
-      "points": 7,
+      "points": 12,
       "played": 3,
       "wins": 2,
       "draws": 1,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Japan": {
       "points": 10,
@@ -1245,20 +1245,20 @@
       "bonus": 5
     },
     "Croatia": {
-      "points": 6,
+      "points": 11,
       "played": 3,
       "wins": 2,
       "draws": 0,
       "losses": 1,
-      "bonus": 0
+      "bonus": 5
     },
     "Paraguay": {
-      "points": 4,
+      "points": 9,
       "played": 3,
       "wins": 1,
       "draws": 1,
       "losses": 1,
-      "bonus": 0
+      "bonus": 5
     },
     "Morocco": {
       "points": 12,
@@ -1277,12 +1277,12 @@
       "bonus": 5
     },
     "Colombia": {
-      "points": 6,
-      "played": 2,
+      "points": 12,
+      "played": 3,
       "wins": 2,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
-      "bonus": 0
+      "bonus": 5
     },
     "Türkiye": {
       "points": 3,
@@ -1293,12 +1293,12 @@
       "bonus": 0
     },
     "Senegal": {
-      "points": 3,
+      "points": 8,
       "played": 3,
       "wins": 1,
       "draws": 0,
       "losses": 2,
-      "bonus": 0
+      "bonus": 5
     },
     "Uruguay": {
       "points": 2,
@@ -1309,12 +1309,12 @@
       "bonus": 0
     },
     "Sweden": {
-      "points": 4,
+      "points": 9,
       "played": 3,
       "wins": 1,
       "draws": 1,
       "losses": 1,
-      "bonus": 0
+      "bonus": 5
     },
     "Scotland": {
       "points": 3,
