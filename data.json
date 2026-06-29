@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T14:51:15.277Z",
+  "lastUpdated": "2026-06-29T21:09:42.027Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -808,24 +808,24 @@
     {
       "id": 537423,
       "utcDate": "2026-06-29T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Brazil",
       "awayTeam": "Japan",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 537415,
       "utcDate": "2026-06-29T20:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Germany",
       "awayTeam": "Paraguay",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537418,
@@ -1165,9 +1165,9 @@
       "bonus": 0
     },
     "Brazil": {
-      "points": 12,
-      "played": 3,
-      "wins": 2,
+      "points": 15,
+      "played": 4,
+      "wins": 3,
       "draws": 1,
       "losses": 0,
       "bonus": 5
@@ -1238,10 +1238,10 @@
     },
     "Japan": {
       "points": 10,
-      "played": 3,
+      "played": 4,
       "wins": 1,
       "draws": 2,
-      "losses": 0,
+      "losses": 1,
       "bonus": 5
     },
     "Croatia": {
