@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T23:55:12.425Z",
+  "lastUpdated": "2026-06-29T14:51:15.277Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -976,7 +976,7 @@
       "status": "TIMED",
       "stage": "LAST_16",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Canada",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
