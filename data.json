@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T21:09:42.027Z",
+  "lastUpdated": "2026-06-30T08:47:56.358Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -819,24 +819,24 @@
     {
       "id": 537415,
       "utcDate": "2026-06-29T20:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Germany",
       "awayTeam": "Paraguay",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 4,
+      "awayScore": 5
     },
     {
       "id": 537418,
       "utcDate": "2026-06-30T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Netherlands",
       "awayTeam": "Morocco",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 4
     },
     {
       "id": 537424,
@@ -977,7 +977,7 @@
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Canada",
-      "awayTeam": "",
+      "awayTeam": "Morocco",
       "homeScore": null,
       "awayScore": null
     },
@@ -987,7 +987,7 @@
       "status": "TIMED",
       "stage": "LAST_16",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Paraguay",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -998,7 +998,7 @@
       "status": "TIMED",
       "stage": "LAST_16",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Brazil",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -1150,10 +1150,10 @@
   "teamStats": {
     "Netherlands": {
       "points": 12,
-      "played": 3,
+      "played": 4,
       "wins": 2,
       "draws": 1,
-      "losses": 0,
+      "losses": 1,
       "bonus": 5
     },
     "Iran": {
@@ -1165,12 +1165,12 @@
       "bonus": 0
     },
     "Brazil": {
-      "points": 15,
+      "points": 20,
       "played": 4,
       "wins": 3,
       "draws": 1,
       "losses": 0,
-      "bonus": 5
+      "bonus": 10
     },
     "Austria": {
       "points": 9,
@@ -1182,10 +1182,10 @@
     },
     "Germany": {
       "points": 11,
-      "played": 3,
+      "played": 4,
       "wins": 2,
       "draws": 0,
-      "losses": 1,
+      "losses": 2,
       "bonus": 5
     },
     "Mexico": {
@@ -1253,20 +1253,20 @@
       "bonus": 5
     },
     "Paraguay": {
-      "points": 9,
-      "played": 3,
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "bonus": 5
-    },
-    "Morocco": {
-      "points": 12,
-      "played": 3,
+      "points": 17,
+      "played": 4,
       "wins": 2,
       "draws": 1,
+      "losses": 1,
+      "bonus": 10
+    },
+    "Morocco": {
+      "points": 20,
+      "played": 4,
+      "wins": 3,
+      "draws": 1,
       "losses": 0,
-      "bonus": 5
+      "bonus": 10
     },
     "United States": {
       "points": 11,
