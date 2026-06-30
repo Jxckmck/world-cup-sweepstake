@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T16:37:51.090Z",
+  "lastUpdated": "2026-06-30T22:02:30.187Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -841,24 +841,24 @@
     {
       "id": 537424,
       "utcDate": "2026-06-30T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Ivory Coast",
       "awayTeam": "Norway",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 537416,
       "utcDate": "2026-06-30T21:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "France",
       "awayTeam": "Sweden",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537425,
@@ -1221,9 +1221,9 @@
       "bonus": 5
     },
     "Norway": {
-      "points": 11,
-      "played": 3,
-      "wins": 2,
+      "points": 14,
+      "played": 4,
+      "wins": 3,
       "draws": 0,
       "losses": 1,
       "bonus": 5
