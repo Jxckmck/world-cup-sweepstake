@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T10:56:30.210Z",
+  "lastUpdated": "2026-07-01T18:24:42.799Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -874,13 +874,13 @@
     {
       "id": 537426,
       "utcDate": "2026-07-01T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "England",
       "awayTeam": "Congo DR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "id": 537422,
@@ -1229,9 +1229,9 @@
       "bonus": 10
     },
     "England": {
-      "points": 12,
-      "played": 3,
-      "wins": 2,
+      "points": 15,
+      "played": 4,
+      "wins": 3,
       "draws": 1,
       "losses": 0,
       "bonus": 5
