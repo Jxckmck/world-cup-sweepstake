@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T18:24:42.799Z",
+  "lastUpdated": "2026-07-01T22:50:49.029Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -885,13 +885,13 @@
     {
       "id": 537422,
       "utcDate": "2026-07-01T20:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Belgium",
       "awayTeam": "Senegal",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "id": 537421,
