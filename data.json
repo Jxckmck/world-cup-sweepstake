@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T16:30:18.974Z",
+  "lastUpdated": "2026-07-02T20:43:55.894Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -907,13 +907,13 @@
     {
       "id": 537420,
       "utcDate": "2026-07-02T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Spain",
       "awayTeam": "Austria",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 0
     },
     {
       "id": 537419,
