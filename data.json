@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T15:56:10.378Z",
+  "lastUpdated": "2026-07-03T20:34:11.083Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -940,13 +940,13 @@
     {
       "id": 537428,
       "utcDate": "2026-07-03T18:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "LAST_32",
       "group": null,
       "homeTeam": "Australia",
       "awayTeam": "Egypt",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 537427,
