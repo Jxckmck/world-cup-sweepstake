@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T20:13:48.373Z",
+  "lastUpdated": "2026-07-04T23:46:11.280Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -984,13 +984,13 @@
     {
       "id": 537375,
       "utcDate": "2026-07-04T21:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Paraguay",
       "awayTeam": "France",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "id": 537377,
@@ -1254,10 +1254,10 @@
     },
     "Paraguay": {
       "points": 17,
-      "played": 4,
+      "played": 5,
       "wins": 2,
       "draws": 1,
-      "losses": 1,
+      "losses": 2,
       "bonus": 10
     },
     "Morocco": {
