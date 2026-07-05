@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T18:48:13.982Z",
+  "lastUpdated": "2026-07-05T22:33:02.261Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -995,13 +995,13 @@
     {
       "id": 537377,
       "utcDate": "2026-07-05T20:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Brazil",
       "awayTeam": "Norway",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 537378,
@@ -1166,10 +1166,10 @@
     },
     "Brazil": {
       "points": 20,
-      "played": 4,
+      "played": 5,
       "wins": 3,
       "draws": 1,
-      "losses": 0,
+      "losses": 1,
       "bonus": 10
     },
     "Austria": {
@@ -1221,9 +1221,9 @@
       "bonus": 10
     },
     "Norway": {
-      "points": 19,
-      "played": 4,
-      "wins": 3,
+      "points": 22,
+      "played": 5,
+      "wins": 4,
       "draws": 0,
       "losses": 1,
       "bonus": 10
