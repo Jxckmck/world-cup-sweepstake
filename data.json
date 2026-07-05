@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T23:46:11.280Z",
+  "lastUpdated": "2026-07-05T09:46:18.108Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1064,8 +1064,8 @@
       "status": "TIMED",
       "stage": "QUARTER_FINALS",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "France",
+      "awayTeam": "Morocco",
       "homeScore": null,
       "awayScore": null
     },
@@ -1261,12 +1261,12 @@
       "bonus": 10
     },
     "Morocco": {
-      "points": 23,
+      "points": 43,
       "played": 5,
       "wins": 4,
       "draws": 1,
       "losses": 0,
-      "bonus": 10
+      "bonus": 30
     },
     "United States": {
       "points": 19,
