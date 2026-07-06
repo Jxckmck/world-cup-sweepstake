@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T19:22:55.450Z",
+  "lastUpdated": "2026-07-06T23:40:24.954Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1017,13 +1017,13 @@
     {
       "id": 537379,
       "utcDate": "2026-07-06T19:00:00Z",
-      "status": "LIVE",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Portugal",
       "awayTeam": "Spain",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 1
     },
     {
       "id": 537380,
@@ -1198,10 +1198,10 @@
     },
     "Portugal": {
       "points": 18,
-      "played": 4,
+      "played": 5,
       "wins": 2,
       "draws": 2,
-      "losses": 0,
+      "losses": 1,
       "bonus": 10
     },
     "Switzerland": {
