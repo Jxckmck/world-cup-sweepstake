@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T22:33:02.261Z",
+  "lastUpdated": "2026-07-06T13:00:45.928Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1005,14 +1005,14 @@
     },
     {
       "id": 537378,
-      "utcDate": "2026-07-06T00:00:00Z",
-      "status": "TIMED",
+      "utcDate": "2026-07-06T01:00:00Z",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Mexico",
       "awayTeam": "England",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "id": 537379,
@@ -1086,8 +1086,8 @@
       "status": "TIMED",
       "stage": "QUARTER_FINALS",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Norway",
+      "awayTeam": "England",
       "homeScore": null,
       "awayScore": null
     },
@@ -1190,10 +1190,10 @@
     },
     "Mexico": {
       "points": 22,
-      "played": 4,
+      "played": 5,
       "wins": 4,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 10
     },
     "Portugal": {
@@ -1221,20 +1221,20 @@
       "bonus": 10
     },
     "Norway": {
-      "points": 22,
+      "points": 42,
       "played": 5,
       "wins": 4,
       "draws": 0,
       "losses": 1,
-      "bonus": 10
+      "bonus": 30
     },
     "England": {
-      "points": 20,
-      "played": 4,
-      "wins": 3,
+      "points": 43,
+      "played": 5,
+      "wins": 4,
       "draws": 1,
       "losses": 0,
-      "bonus": 10
+      "bonus": 30
     },
     "Japan": {
       "points": 10,
