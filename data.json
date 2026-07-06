@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T13:00:45.928Z",
+  "lastUpdated": "2026-07-06T19:22:55.450Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1017,13 +1017,13 @@
     {
       "id": 537379,
       "utcDate": "2026-07-06T19:00:00Z",
-      "status": "TIMED",
+      "status": "LIVE",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Portugal",
       "awayTeam": "Spain",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537380,
