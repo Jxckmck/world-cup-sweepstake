@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T18:26:27.297Z",
+  "lastUpdated": "2026-07-07T22:39:38.434Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1050,13 +1050,13 @@
     {
       "id": 537382,
       "utcDate": "2026-07-07T20:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Switzerland",
       "awayTeam": "Colombia",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537383,
