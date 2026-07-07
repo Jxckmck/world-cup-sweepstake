@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T10:40:51.609Z",
+  "lastUpdated": "2026-07-07T18:26:27.297Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1039,13 +1039,13 @@
     {
       "id": 537381,
       "utcDate": "2026-07-07T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Argentina",
       "awayTeam": "Egypt",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "id": 537382,
