@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T23:40:24.954Z",
+  "lastUpdated": "2026-07-07T10:40:51.609Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1028,13 +1028,13 @@
     {
       "id": 537380,
       "utcDate": "2026-07-07T00:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "United States",
       "awayTeam": "Belgium",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "id": 537381,
@@ -1075,8 +1075,8 @@
       "status": "TIMED",
       "stage": "QUARTER_FINALS",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Spain",
+      "awayTeam": "Belgium",
       "homeScore": null,
       "awayScore": null
     },
@@ -1213,12 +1213,12 @@
       "bonus": 10
     },
     "Belgium": {
-      "points": 18,
-      "played": 4,
-      "wins": 2,
+      "points": 41,
+      "played": 5,
+      "wins": 3,
       "draws": 2,
       "losses": 0,
-      "bonus": 10
+      "bonus": 30
     },
     "Norway": {
       "points": 42,
@@ -1270,10 +1270,10 @@
     },
     "United States": {
       "points": 19,
-      "played": 4,
+      "played": 5,
       "wins": 3,
       "draws": 0,
-      "losses": 1,
+      "losses": 2,
       "bonus": 10
     },
     "Colombia": {
