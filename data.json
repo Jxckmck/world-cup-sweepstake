@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T22:39:38.434Z",
+  "lastUpdated": "2026-07-08T07:42:39.267Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1050,13 +1050,13 @@
     {
       "id": 537382,
       "utcDate": "2026-07-07T20:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Switzerland",
       "awayTeam": "Colombia",
-      "homeScore": 0,
-      "awayScore": 0
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "id": 537383,
@@ -1097,8 +1097,8 @@
       "status": "TIMED",
       "stage": "QUARTER_FINALS",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "Argentina",
+      "awayTeam": "Switzerland",
       "homeScore": null,
       "awayScore": null
     },
@@ -1205,12 +1205,12 @@
       "bonus": 10
     },
     "Switzerland": {
-      "points": 20,
-      "played": 4,
-      "wins": 3,
+      "points": 43,
+      "played": 5,
+      "wins": 4,
       "draws": 1,
       "losses": 0,
-      "bonus": 10
+      "bonus": 30
     },
     "Belgium": {
       "points": 41,
@@ -1278,10 +1278,10 @@
     },
     "Colombia": {
       "points": 20,
-      "played": 4,
+      "played": 5,
       "wins": 3,
       "draws": 1,
-      "losses": 0,
+      "losses": 1,
       "bonus": 10
     },
     "Türkiye": {
