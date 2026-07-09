@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T19:11:25.866Z",
+  "lastUpdated": "2026-07-09T20:57:40.440Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1061,13 +1061,13 @@
     {
       "id": 537383,
       "utcDate": "2026-07-09T20:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "QUARTER_FINALS",
       "group": null,
       "homeTeam": "France",
       "awayTeam": "Morocco",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537384,
