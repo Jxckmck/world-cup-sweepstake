@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T02:33:07.447Z",
+  "lastUpdated": "2026-07-10T06:27:33.976Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1108,7 +1108,7 @@
       "status": "TIMED",
       "stage": "SEMI_FINALS",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "France",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
