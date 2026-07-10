@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T20:16:36.862Z",
+  "lastUpdated": "2026-07-10T21:31:00.360Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1072,12 +1072,12 @@
     {
       "id": 537384,
       "utcDate": "2026-07-10T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "QUARTER_FINALS",
       "group": null,
       "homeTeam": "Spain",
       "awayTeam": "Belgium",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 1
     },
     {
@@ -1214,10 +1214,10 @@
     },
     "Belgium": {
       "points": 41,
-      "played": 5,
+      "played": 6,
       "wins": 3,
       "draws": 2,
-      "losses": 0,
+      "losses": 1,
       "bonus": 30
     },
     "Norway": {
