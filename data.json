@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T18:50:38.470Z",
+  "lastUpdated": "2026-07-10T20:16:36.862Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1072,13 +1072,13 @@
     {
       "id": 537384,
       "utcDate": "2026-07-10T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "QUARTER_FINALS",
       "group": null,
       "homeTeam": "Spain",
       "awayTeam": "Belgium",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 1
     },
     {
       "id": 537385,
