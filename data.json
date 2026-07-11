@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T22:25:01.264Z",
+  "lastUpdated": "2026-07-11T23:29:03.088Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1088,8 +1088,8 @@
       "group": null,
       "homeTeam": "Norway",
       "awayTeam": "England",
-      "homeScore": 2,
-      "awayScore": 1
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "id": 537386,
