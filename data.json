@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T20:26:43.792Z",
+  "lastUpdated": "2026-07-11T21:25:45.173Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1006,7 +1006,7 @@
     {
       "id": 537378,
       "utcDate": "2026-07-06T01:00:00Z",
-      "status": "FINISHED",
+      "status": "2026-07-06 01:00:00Z",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Mexico",
@@ -1083,13 +1083,13 @@
     {
       "id": 537385,
       "utcDate": "2026-07-11T21:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "QUARTER_FINALS",
       "group": null,
       "homeTeam": "Norway",
       "awayTeam": "England",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537386,
@@ -1190,10 +1190,10 @@
     },
     "Mexico": {
       "points": 22,
-      "played": 5,
+      "played": 4,
       "wins": 4,
       "draws": 0,
-      "losses": 1,
+      "losses": 0,
       "bonus": 10
     },
     "Portugal": {
@@ -1229,9 +1229,9 @@
       "bonus": 30
     },
     "England": {
-      "points": 43,
-      "played": 5,
-      "wins": 4,
+      "points": 40,
+      "played": 4,
+      "wins": 3,
       "draws": 1,
       "losses": 0,
       "bonus": 30
