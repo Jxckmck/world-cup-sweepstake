@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T23:29:03.088Z",
+  "lastUpdated": "2026-07-12T01:08:26.301Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1083,7 +1083,7 @@
     {
       "id": 537385,
       "utcDate": "2026-07-11T21:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "QUARTER_FINALS",
       "group": null,
       "homeTeam": "Norway",
@@ -1094,13 +1094,13 @@
     {
       "id": 537386,
       "utcDate": "2026-07-12T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "QUARTER_FINALS",
       "group": null,
       "homeTeam": "Argentina",
       "awayTeam": "Switzerland",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537387,
@@ -1222,19 +1222,19 @@
     },
     "Norway": {
       "points": 42,
-      "played": 5,
+      "played": 6,
       "wins": 4,
       "draws": 0,
-      "losses": 1,
+      "losses": 2,
       "bonus": 30
     },
     "England": {
-      "points": 40,
-      "played": 4,
-      "wins": 3,
+      "points": 63,
+      "played": 5,
+      "wins": 4,
       "draws": 1,
       "losses": 0,
-      "bonus": 30
+      "bonus": 50
     },
     "Japan": {
       "points": 10,
