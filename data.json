@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T04:39:51.467Z",
+  "lastUpdated": "2026-07-12T07:17:37.161Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1006,7 +1006,7 @@
     {
       "id": 537378,
       "utcDate": "2026-07-06T01:00:00Z",
-      "status": "2026-07-06 01:00:00Z",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "homeTeam": "Mexico",
@@ -1119,8 +1119,8 @@
       "status": "TIMED",
       "stage": "SEMI_FINALS",
       "group": null,
-      "homeTeam": "",
-      "awayTeam": "",
+      "homeTeam": "England",
+      "awayTeam": "Argentina",
       "homeScore": null,
       "awayScore": null
     },
@@ -1190,10 +1190,10 @@
     },
     "Mexico": {
       "points": 22,
-      "played": 4,
+      "played": 5,
       "wins": 4,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "bonus": 10
     },
     "Portugal": {
@@ -1229,9 +1229,9 @@
       "bonus": 30
     },
     "England": {
-      "points": 63,
-      "played": 5,
-      "wins": 4,
+      "points": 66,
+      "played": 6,
+      "wins": 5,
       "draws": 1,
       "losses": 0,
       "bonus": 50
