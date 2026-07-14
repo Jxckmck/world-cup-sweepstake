@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T20:02:39.875Z",
+  "lastUpdated": "2026-07-14T21:11:27.393Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1105,13 +1105,13 @@
     {
       "id": 537387,
       "utcDate": "2026-07-14T19:00:00Z",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "stage": "SEMI_FINALS",
       "group": null,
       "homeTeam": "France",
       "awayTeam": "Spain",
       "homeScore": 0,
-      "awayScore": 1
+      "awayScore": 2
     },
     {
       "id": 537388,
