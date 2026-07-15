@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T20:44:03.220Z",
+  "lastUpdated": "2026-07-15T21:42:51.876Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1116,13 +1116,13 @@
     {
       "id": 537388,
       "utcDate": "2026-07-15T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "SEMI_FINALS",
       "group": null,
       "homeTeam": "England",
       "awayTeam": "Argentina",
       "homeScore": 1,
-      "awayScore": 0
+      "awayScore": 2
     },
     {
       "id": 537389,
@@ -1230,10 +1230,10 @@
     },
     "England": {
       "points": 66,
-      "played": 6,
+      "played": 7,
       "wins": 5,
       "draws": 1,
-      "losses": 0,
+      "losses": 1,
       "bonus": 50
     },
     "Japan": {
