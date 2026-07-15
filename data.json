@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T18:16:33.043Z",
+  "lastUpdated": "2026-07-15T19:41:52.746Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1116,13 +1116,13 @@
     {
       "id": 537388,
       "utcDate": "2026-07-15T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "SEMI_FINALS",
       "group": null,
       "homeTeam": "England",
       "awayTeam": "Argentina",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "id": 537389,
