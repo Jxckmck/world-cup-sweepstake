@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T05:58:19.421Z",
+  "lastUpdated": "2026-07-15T08:30:21.195Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1130,7 +1130,7 @@
       "status": "TIMED",
       "stage": "THIRD_PLACE",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "France",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
@@ -1141,7 +1141,7 @@
       "status": "TIMED",
       "stage": "FINAL",
       "group": null,
-      "homeTeam": "",
+      "homeTeam": "Spain",
       "awayTeam": "",
       "homeScore": null,
       "awayScore": null
