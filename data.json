@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T19:41:52.746Z",
+  "lastUpdated": "2026-07-15T20:44:03.220Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1121,7 +1121,7 @@
       "group": null,
       "homeTeam": "England",
       "awayTeam": "Argentina",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0
     },
     {
