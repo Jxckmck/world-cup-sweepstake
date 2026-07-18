@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T21:31:28.029Z",
+  "lastUpdated": "2026-07-18T22:28:40.756Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1132,8 +1132,8 @@
       "group": null,
       "homeTeam": "France",
       "awayTeam": "England",
-      "homeScore": 0,
-      "awayScore": 2
+      "homeScore": 2,
+      "awayScore": 4
     },
     {
       "id": 537390,
