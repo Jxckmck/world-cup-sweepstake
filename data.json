@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T22:28:40.756Z",
+  "lastUpdated": "2026-07-18T23:31:39.495Z",
   "source": "football-data.org",
   "matches": [
     {
@@ -1127,13 +1127,13 @@
     {
       "id": 537389,
       "utcDate": "2026-07-18T21:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "THIRD_PLACE",
       "group": null,
       "homeTeam": "France",
       "awayTeam": "England",
-      "homeScore": 2,
-      "awayScore": 4
+      "homeScore": 4,
+      "awayScore": 6
     },
     {
       "id": 537390,
@@ -1229,9 +1229,9 @@
       "bonus": 30
     },
     "England": {
-      "points": 66,
-      "played": 7,
-      "wins": 5,
+      "points": 69,
+      "played": 8,
+      "wins": 6,
       "draws": 1,
       "losses": 1,
       "bonus": 50
